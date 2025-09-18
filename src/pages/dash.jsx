@@ -80,12 +80,15 @@ function Dashboard() {
         </div>
       </div>
 
-      <div className="bg-white p-4 rounded-lg shadow">
+      <div className="bg-white mb-10 p-4 rounded-lg shadow">
         <div className="flex items-center gap-2 mb-4">
           <span className="text-sm text-gray-600">Visualização:</span>
           <Graficos.Toggle />
         </div>
-        <Graficos /> 
+        <div class='mb-10 '>
+          <Graficos /> 
+        </div>
+        
       </div>
 
     </div>
