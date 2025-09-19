@@ -54,7 +54,6 @@ Sistema web para monitoramento e visualização de dados de pessoas em diferente
 - **React Router DOM** - Roteamento client-side
 - **Tailwind CSS** - Framework CSS utilitário para estilização
 
-
 ### Visualização de Dados
 - **Recharts** - Biblioteca para gráficos interativos (Pizza, Linha, Barra)
 - **React Leaflet** - Integração com mapas interativos
@@ -176,18 +175,6 @@ O projeto foi desenvolvido com foco em responsividade:
 - **Breakpoints**: sm, md, lg, xl
 - **Grid System**: CSS Grid e Flexbox
 - **Componentes Adaptáveis**: Toggle, botões e formulários
-
-## 🤝 Contribuição
-
-1. Fork o projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
 ## 👥 Equipe
 
