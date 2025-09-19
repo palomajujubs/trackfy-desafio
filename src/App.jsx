@@ -3,10 +3,13 @@ import Dashboard from './pages/dash.jsx'
 import Home from './pages/home.jsx'
 import Maps from './pages/maps.jsx' 
 import Navbar from './components/layout/navbar.jsx'
-import Footer from './components/layout/footer/footer.jsx'
+import Footer from './components/layout/footer.jsx'
+
+const basename = 'trackfy-desafio/'
+
 function App() {
   return (
-    <Router> 
+    <Router basename={basename}> 
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
