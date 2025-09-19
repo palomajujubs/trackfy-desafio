@@ -6,7 +6,7 @@ Sistema web para monitoramento e visualização de dados de pessoas em diferente
 ## 🔗 Links Úteis
 
 - **Repositório**: [https://github.com/palomajujubs/trackfy-desafio](https://github.com/palomajujubs/trackfy-desafio)
-- **Demo**: [https://palomajujubs.github.io/dashboard](https://palomajujubs.github.io/) 
+- **Demo**: [https://palomajujubs.github.io/trackfy-desafio/](https://palomajujubs.github.io/trackfy-desafio/) 
 
 
 ## 🚀 Instruções para Rodar o Projeto
