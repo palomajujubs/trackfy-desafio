@@ -14,7 +14,7 @@ Sistema web para monitoramento e visualização de dados de pessoas em diferente
 ### Pré-requisitos
 - Node.js (versão 18 ou superior)
 - npm ou yarn
-- Caso use npm 
+
 
 
 
