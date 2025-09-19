@@ -1,4 +1,4 @@
-# Trackfy - Sistema de Monitoramento de Pessoas
+# Trackfy - Desafio: Sistema de Monitoramento de Pessoas
 
 
 Sistema web para monitoramento e visualização de dados de pessoas em diferentes áreas, com dashboard interativo e mapa georreferenciado.
@@ -53,7 +53,7 @@ Sistema web para monitoramento e visualização de dados de pessoas em diferente
 - **Vite** - Build tool moderno e rápido
 - **React Router DOM** - Roteamento client-side
 - **Tailwind CSS** - Framework CSS utilitário para estilização
-- **DaisyUI** - Componentes pré-construídos para Tailwind
+
 
 ### Visualização de Dados
 - **Recharts** - Biblioteca para gráficos interativos (Pizza, Linha, Barra)
