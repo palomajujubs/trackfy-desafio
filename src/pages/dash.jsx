@@ -25,13 +25,13 @@ function Dashboard() {
   };
 
   return (
-    <div className="p-6 bg-gray-50 min-h-screen">
-      <div className="flex justify-between items-center mb-6">
+    <div className="p-4 sm:p-6 bg-gray-50 min-h-screen ml-4 sm:ml-8">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
         <div className="flex items-center gap-4">
           <BackButton />
-          <h1 className="text-3xl font-bold text-slate-950">Dashboard</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold text-slate-950">Dashboard</h1>
         </div>
-        <div className="flex gap-3">
+        <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
           <button 
             onClick={limparFiltros}
             className="px-4 py-2 bg-slate-950 text-white rounded-lg hover:bg-blue-400 transition-colors"
@@ -112,14 +112,11 @@ function Dashboard() {
           <span className="text-sm text-gray-600">Visualização:</span>
           <Graficos.Toggle />
         </div>
-        <div className='ml-20 mr-20 mb-10 '>
+        <div className='mx-2 sm:mx-4 lg:mx-20 mb-4 sm:mb-10'>
           <Graficos /> 
         </div>
-        
       </div>
-
     </div>
-    
   );
 }
 export default Dashboard;

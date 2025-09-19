@@ -1,6 +1,13 @@
 # Trackfy - Sistema de Monitoramento de Pessoas
 
+
 Sistema web para monitoramento e visualização de dados de pessoas em diferentes áreas, com dashboard interativo e mapa georreferenciado.
+
+## 🔗 Links Úteis
+
+- **Repositório**: [https://github.com/palomajujubs/trackfy-desafio](https://github.com/palomajujubs/trackfy-desafio)
+- **Demo**: [https://trackfy-desafio.vercel.app](https://trackfy-desafio.vercel.app) *(em breve)*
+
 
 ## 🚀 Instruções para Rodar o Projeto
 
@@ -15,7 +22,7 @@ Sistema web para monitoramento e visualização de dados de pessoas em diferente
 
 1. **Clone o repositório**
    ```bash
-   git clone <url-do-repositorio>
+   git clone https://github.com/palomajujubs/trackfy-desafio.git
    cd trackfy-desafio
    ```
 

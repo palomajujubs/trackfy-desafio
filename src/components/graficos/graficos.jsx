@@ -144,10 +144,10 @@ function Toggle() {
     setRerender((n) => n + 1);
   };
   return (
-    <div className="flex gap-2 ">
-      <button className="hover:underline" onClick={() => setType('linha')}>Linha</button>
-      <button className="hover:underline" onClick={() => setType('barra')}>Barra</button>
-      <button className="hover:underline" onClick={() => setType('pizza')}>Pizza</button>
+    <div className="flex flex-wrap gap-2">
+      <button className="px-2 py-1 text-sm sm:text-base hover:underline" onClick={() => setType('linha')}>Linha</button>
+      <button className="px-2 py-1 text-sm sm:text-base hover:underline" onClick={() => setType('barra')}>Barra</button>
+      <button className="px-2 py-1 text-sm sm:text-base hover:underline" onClick={() => setType('pizza')}>Pizza</button>
     </div>
   );
 }

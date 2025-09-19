@@ -3,7 +3,7 @@ import logo from "../../assets/logo-cor-2.svg";
 
 const Navbar = () => {
     return (
-        <div className="flex flex-row bg-slate-950 text-amber-50 px-4 h-16 items-center">
+        <div className="flex flex-row bg-slate-950 text-amber-50 px-4 h-16 w-screen items-center justify-start ">
             <div className="flex-none">
                 <Link to="/" className="btn btn-ghost text-xl">
                     <img src={logo} alt="Trackfy Logo" className="h-10" />

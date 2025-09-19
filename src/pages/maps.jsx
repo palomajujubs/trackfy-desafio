@@ -4,25 +4,25 @@ import AreasMap from "../components/map.jsx";
 import Mapa from "../assets/undraw_global-team_8jok (1).svg";
 function Maps() {
   return (
-    <div className="p-6 bg-gray-50 min-h-screen">
-      <div className="flex items-center gap-4 mb-6">
+    <div className="p-4 sm:p-6 bg-gray-50 min-h-screen ml-4 sm:ml-8">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-6">
         <BackButton />
-        <h1 className="text-3xl font-bold text-slate-950">Mapa interativo</h1>
+        <h1 className="text-2xl sm:text-3xl font-bold text-slate-950">Mapa interativo</h1>
       </div>
       
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div>
           <p className="text-gray-600 mb-4">
-            O mapa interativo ao lado exibe as áreas monitoradas e a
+            O mapa interativo exibe as áreas monitoradas e a
             quantidade de pessoas presentes em cada área.
             clique em cada área para ver os dados detalhados.
           </p>
-          <div className="flex justify-center mt-10 ">
-            <img src={Mapa} alt="Mapa ilustrativo" className="w-80 h-64 object-contain" />
+          <div className="flex justify-center mt-10">
+            <img src={Mapa} alt="Mapa ilustrativo" className="w-full max-w-sm sm:max-w-md lg:max-w-lg h-48 sm:h-56 lg:h-64 object-contain" />
           </div>
         </div>
-        <div className="bg-white p-4 rounded-lg shadow">
-          <div className="ml-20 mr-20 mb-10 rounded-lg overflow-hidden">
+        <div className="bg-white p-2 sm:p-4 rounded-lg shadow">
+          <div className="mx-2 sm:mx-4 lg:mx-20 mb-4 sm:mb-10 rounded-lg overflow-hidden">
             <AreasMap />
           </div>
         </div>
