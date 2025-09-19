@@ -35,7 +35,7 @@ const processarDadosPizza = (dados) => {
   }));
 };
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#AF19FF'];
+const COLORS = ['#3941D1', '#60A5FA', '#93C5FD', '#BFDBFE', '#DBEAFE'];
 
 const formatDateLabel = (date, granularity) => {
   const d = new Date(date);
@@ -118,7 +118,7 @@ function Graficos() {
               <YAxis />
               <Tooltip />
               <Legend />
-              <Line type="monotone" dataKey="value" stroke="#0088FE" dot={false} />
+              <Line type="monotone" dataKey="value" stroke="#3941D1" dot={false} />
             </LineChart>
           ) : (
             <BarChart data={dadosSerieTemporal} margin={{ top: 10, right: 20, bottom: 10, left: 0 }}>
@@ -127,7 +127,7 @@ function Graficos() {
               <YAxis />
               <Tooltip />
               <Legend />
-              <Bar dataKey="value" fill="#00C49F" />
+              <Bar dataKey="value" fill="#60A5FA" />
             </BarChart>
           )}
         </ResponsiveContainer>
@@ -145,9 +145,9 @@ function Toggle() {
   };
   return (
     <div className="flex gap-2 ">
-      <button className="btn btn-sm hover:underline" onClick={() => setType('linha')}>Linha</button>
-      <button className="btn btn-sm hover:underline" onClick={() => setType('barra')}>Barra</button>
-      <button className="btn btn-sm hover:underline" onClick={() => setType('pizza')}>Pizza</button>
+      <button className="hover:underline" onClick={() => setType('linha')}>Linha</button>
+      <button className="hover:underline" onClick={() => setType('barra')}>Barra</button>
+      <button className="hover:underline" onClick={() => setType('pizza')}>Pizza</button>
     </div>
   );
 }
@@ -209,7 +209,7 @@ function GraficosInner({ chartType }) {
               <YAxis />
               <Tooltip />
               <Legend />
-              <Line type="monotone" dataKey="value" stroke="#0088FE" dot={false} />
+              <Line type="monotone" dataKey="value" stroke="#3941D1" dot={false} />
             </LineChart>
           ) : (
             <BarChart data={dadosSerieTemporal} margin={{ top: 10, right: 20, bottom: 10, left: 0 }}>
@@ -218,7 +218,7 @@ function GraficosInner({ chartType }) {
               <YAxis />
               <Tooltip />
               <Legend />
-              <Bar dataKey="value" fill="#00C49F" />
+              <Bar dataKey="value" fill="#60A5FA" />
             </BarChart>
           )}
         </ResponsiveContainer>

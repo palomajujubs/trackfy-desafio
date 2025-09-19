@@ -33,6 +33,7 @@ function AreasMap() {
         for (const item of (dadosFiltrados || [])) {
             totalsMap.set(item.area, (totalsMap.get(item.area) || 0) + (item.quantidade || 0));
         }
+        
         return totalsMap;
     }, [dadosFiltrados]);
 
@@ -44,17 +45,20 @@ function AreasMap() {
                 attribution='&copy; OpenStreetMap contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            {(locations || []).map((area) => (
-                <Marker key={area.nome} position={[area.latitude, area.longitude]}>
-                    <Popup>
-                        <div>
-                            <div><strong>{area.nome}</strong></div>
-                            <div>Tipo: {area.tipo}</div>
-                            <div>Quantidade: {totalsByArea.get(area.nome) || 0}</div>
-                        </div>
-                    </Popup>
-                </Marker>
-            ))}
+            {(locations || []).map((area) => {
+                const quantidade = totalsByArea.get(area.nome) || 0;
+                return (
+                    <Marker key={area.nome} position={[area.latitude, area.longitude]}>
+                        <Popup>
+                            <div>
+                                <div><strong>{area.nome}</strong></div>
+                                <div>Tipo: {area.tipo}</div>
+                                <div>Quantidade: {quantidade}</div>
+                            </div>
+                        </Popup>
+                    </Marker>
+                );
+            })}
         </MapContainer>
     );
 }
